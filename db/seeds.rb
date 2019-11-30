@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+(1..20).each do |n|
+    Memo.create(
+    title: "제목#{n}",
+    content: "내용#{n}",
+    user_id: 1
+    )
+    
+end 
