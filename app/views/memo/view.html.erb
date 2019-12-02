@@ -22,7 +22,7 @@
     </div>
     <hr>
     <% @post.replies.each do |r| %>
-        작성자 : <%= r.content %>
+        <%= r.user.username %> : <%= r.content %>
         <% if current_user.id == r.user_id %>
             <a href="/reply/destroy/<%= r.id %>">
                 <span class="badge badge-danger">삭제</span>
